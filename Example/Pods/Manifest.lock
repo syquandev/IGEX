@@ -1,0 +1,70 @@
+PODS:
+  - Core (0.1.0):
+    - FontAwesome
+    - ObjectMapper (= 4.2.0)
+    - RxSwift
+  - FontAwesome (4.5.0)
+  - IGEX (0.1.0):
+    - Core
+    - IGListKit
+    - RxCocoa
+    - RxSwift
+  - IGListDiffKit (4.0.0)
+  - IGListKit (4.0.0):
+    - IGListDiffKit (= 4.0.0)
+  - ObjectMapper (4.2.0)
+  - RxCocoa (6.5.0):
+    - RxRelay (= 6.5.0)
+    - RxSwift (= 6.5.0)
+  - RxGesture (4.0.4):
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
+  - RxRelay (6.5.0):
+    - RxSwift (= 6.5.0)
+  - RxSwift (6.5.0)
+
+DEPENDENCIES:
+  - Core (from `https://github.com/syquandev/Core`)
+  - IGEX (from `../`)
+  - IGListKit
+  - RxCocoa
+  - RxGesture
+  - RxSwift
+
+SPEC REPOS:
+  trunk:
+    - FontAwesome
+    - IGListDiffKit
+    - IGListKit
+    - ObjectMapper
+    - RxCocoa
+    - RxGesture
+    - RxRelay
+    - RxSwift
+
+EXTERNAL SOURCES:
+  Core:
+    :git: https://github.com/syquandev/Core
+  IGEX:
+    :path: "../"
+
+CHECKOUT OPTIONS:
+  Core:
+    :commit: 39b0669d5a12d8bb39ae85b1529b3da9dd947f71
+    :git: https://github.com/syquandev/Core
+
+SPEC CHECKSUMS:
+  Core: 3aa647dfea5c073b0751c98cdf56ddab6320a8a0
+  FontAwesome: dd8c48bf965e771309d8af17c4d8579217b3e756
+  IGEX: e5cc38e16cd54b785783af6847a666e5fbcd9585
+  IGListDiffKit: 665d6cf43ce726e676013db9c7d6c4294259b6b2
+  IGListKit: fd5a5d21935298f5849fa49d426843cff97b77c7
+  ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
+  RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
+  RxGesture: f3efb47ed2d26a8082f7b660d4a59970e275a7f8
+  RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
+  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
+
+PODFILE CHECKSUM: 617f996906303a8478a1a6045b4abe9d327da3fc
+
+COCOAPODS: 1.11.3

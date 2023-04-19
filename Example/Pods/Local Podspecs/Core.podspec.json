@@ -1,0 +1,44 @@
+{
+  "name": "Core",
+  "version": "0.1.0",
+  "summary": "A short description of Core.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/95286760/Core",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Sy Quan": "syquandev@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/95286760/Core.git",
+    "tag": "0.1.0"
+  },
+  "swift_versions": "4.2",
+  "platforms": {
+    "ios": "11.0"
+  },
+  "source_files": "Core/Classes/**/*",
+  "resource_bundles": {
+    "Core": [
+      "Core/Assets/Storyboards/**/*.storyboard",
+      "Core/Assets/Xibs/**/*.xib",
+      "Core/Assets/Resources/**/*.xcassets",
+      "Core/Classes/**/*.xib",
+      "Core/Classes/**/*.storyboard"
+    ]
+  },
+  "dependencies": {
+    "RxSwift": [
+
+    ],
+    "ObjectMapper": [
+      "4.2.0"
+    ],
+    "FontAwesome": [
+
+    ]
+  },
+  "swift_version": "4.2"
+}

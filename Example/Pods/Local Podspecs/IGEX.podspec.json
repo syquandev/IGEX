@@ -1,0 +1,42 @@
+{
+  "name": "IGEX",
+  "version": "0.1.0",
+  "summary": "A short description of IGEX.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/95286760/IGEX",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "95286760": "lasyquan@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/95286760/IGEX.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "11.0"
+  },
+  "source_files": "IGEX/Classes/**/*",
+  "resource_bundles": {
+    "IGEX": [
+      "IGEX/Assets/**/*"
+    ]
+  },
+  "static_framework": true,
+  "dependencies": {
+    "IGListKit": [
+
+    ],
+    "RxSwift": [
+
+    ],
+    "RxCocoa": [
+
+    ],
+    "Core": [
+
+    ]
+  }
+}
