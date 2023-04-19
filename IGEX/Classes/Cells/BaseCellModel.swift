@@ -7,6 +7,7 @@
 import Foundation
 import UIKit
 import IGListKit
+import Core
 
 public enum ErrorMessageType{
     case leftText

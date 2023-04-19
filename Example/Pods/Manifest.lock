@@ -1,8 +1,9 @@
 PODS:
-  - Core (0.1.0):
+  - Core (1.0.0):
     - FontAwesome
     - ObjectMapper (= 4.2.0)
     - RxSwift
+    - SwiftDate
   - FontAwesome (4.5.0)
   - IGEX (1.0.0):
     - Core
@@ -22,6 +23,7 @@ PODS:
   - RxRelay (6.5.0):
     - RxSwift (= 6.5.0)
   - RxSwift (6.5.0)
+  - SwiftDate (6.3.1)
 
 DEPENDENCIES:
   - Core (from `https://github.com/syquandev/Core`)
@@ -41,6 +43,7 @@ SPEC REPOS:
     - RxGesture
     - RxRelay
     - RxSwift
+    - SwiftDate
 
 EXTERNAL SOURCES:
   Core:
@@ -50,11 +53,11 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   Core:
-    :commit: 39b0669d5a12d8bb39ae85b1529b3da9dd947f71
+    :commit: 0df5b040931b454f7b58b43db1e79fffb80b9dde
     :git: https://github.com/syquandev/Core
 
 SPEC CHECKSUMS:
-  Core: 3aa647dfea5c073b0751c98cdf56ddab6320a8a0
+  Core: f4b43d092ccf95efd42ecfe6265fa2681ff1c5e6
   FontAwesome: dd8c48bf965e771309d8af17c4d8579217b3e756
   IGEX: f9f736775dcf311608c2bfa95d3392fbf65a7bea
   IGListDiffKit: 665d6cf43ce726e676013db9c7d6c4294259b6b2
@@ -64,6 +67,7 @@ SPEC CHECKSUMS:
   RxGesture: f3efb47ed2d26a8082f7b660d4a59970e275a7f8
   RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
   RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
+  SwiftDate: 72d28954e8e1c6c1c0f917ccc8005e4f83c7d4b2
 
 PODFILE CHECKSUM: 617f996906303a8478a1a6045b4abe9d327da3fc
 

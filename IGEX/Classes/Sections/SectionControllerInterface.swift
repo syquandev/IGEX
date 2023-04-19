@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 import IGListKit
+import Core
 
 public protocol SectionControllerInterface: class {
     func setPresenter(_ presenter: AnyObject?)

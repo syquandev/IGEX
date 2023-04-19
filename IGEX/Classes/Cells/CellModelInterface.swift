@@ -6,6 +6,7 @@
 //
 import UIKit
 import IGListKit
+import Core
 
 public protocol CellModelInterface: ListDiffable, DiffBaseModel {
     func setSectionController(_ section: Any?)

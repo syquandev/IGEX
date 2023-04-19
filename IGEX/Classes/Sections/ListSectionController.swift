@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 import IGListKit
+import Core
 
 extension ListSectionController{
     
