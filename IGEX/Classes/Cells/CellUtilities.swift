@@ -50,13 +50,13 @@ public class CellsUtilities: NSObject {
         self.editorLabel = editorLabel
     }
     
-    public static func getFixRatio(image: UIImage, maxWidth: CGFloat, imageView: UIImageView, contentMode:UIViewContentMode = UIViewContentMode.center) -> CGFloat{
+    public static func getFixRatio(image: UIImage, maxWidth: CGFloat, imageView: UIImageView, contentMode:UIView.ContentMode = UIView.ContentMode.center) -> CGFloat{
         var ratio = image.size.height/image.size.width
         if image.size.width < maxWidth {
             imageView.contentMode = contentMode
             ratio = image.size.height/maxWidth
         }else{
-            imageView.contentMode = UIViewContentMode.scaleAspectFill
+            imageView.contentMode = UIView.ContentMode.scaleAspectFill
         }
         return ratio
     }

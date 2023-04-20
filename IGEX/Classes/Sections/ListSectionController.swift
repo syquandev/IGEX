@@ -576,11 +576,11 @@ open class SectionController<T:BaseSectionModel>: ListSectionController, Section
     //MARK: - Debug Header
     //https://github.com/Instagram/IGListKit/blob/master/Examples/Examples-iOS/IGListKitExamples/SectionControllers/FeedItemSectionController.swift
     public func supportedElementKinds() -> [String] {
-        return [UICollectionElementKindSectionHeader]
+        return [UICollectionView.elementKindSectionHeader]
     }
     
     public func viewForSupplementaryElement(ofKind elementKind: String, at index: Int) -> UICollectionReusableView {
-        guard let view = collectionContext?.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, for: self, class: _SectionDebugLabelView.self, at: index) as? _SectionDebugLabelView else{
+        guard let view = collectionContext?.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, for: self, class: _SectionDebugLabelView.self, at: index) as? _SectionDebugLabelView else{
             fatalError()
         }
         view.button?.setTitle("\t" + String(describing: type(of: self)), for: [])

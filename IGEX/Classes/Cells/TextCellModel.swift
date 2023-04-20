@@ -31,7 +31,7 @@ public class TextData: NSObject{
 
 open class TextCellModel: BaseCellModel{
     public weak var delegate: TextCellDelegate?
-    public var contentInsets: UIEdgeInsets = UIEdgeInsetsMake(4, 16, 4, 16)
+    public var contentInsets: UIEdgeInsets = UIEdgeInsets(top: 4, left: 16, bottom: 4, right: 16)
     var type: TextType = TextType.normal
     var lineLimit = 0
     public var text: NSAttributedString?{

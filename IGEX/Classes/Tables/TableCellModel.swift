@@ -91,7 +91,7 @@ public class TableTextData: NSObject{
 
 public class TableCellModel: BaseCellModel{
     public var dataModel: TableModelInterface?
-    public var contentInsets: UIEdgeInsets = UIEdgeInsetsMake(4, 16, 4, 16)
+    public var contentInsets: UIEdgeInsets = UIEdgeInsets(top: 4, left: 16, bottom: 4, right: 16)
     public weak var delegate: TableCellDelegate?
     
     public var type: TableCellType = TableCellType.text
