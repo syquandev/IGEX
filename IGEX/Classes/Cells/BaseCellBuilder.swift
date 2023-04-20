@@ -74,10 +74,10 @@ open class BaseCellBuilder: NSObject, CellBuilderInterface {
 //        self.cellModels.safeAppend(cellModel)
 //    }
     
-//    public func addLoading(){
-//        let cellModel = LoadingCellModel()
-//        self.cellModels.safeAppend(cellModel)
-//    }
+    public func addLoading(){
+        let cellModel = LoadingCellModel()
+        self.cellModels.safeAppend(cellModel)
+    }
     
 //    public func addManualLoading(){
 //        let cellModel = ManualLoadingCellModel()

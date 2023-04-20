@@ -10,6 +10,7 @@ PODS:
     - IGListKit
     - RxCocoa
     - RxSwift
+    - Shimmer (= 1.0.2)
   - IGListDiffKit (4.0.0)
   - IGListKit (4.0.0):
     - IGListDiffKit (= 4.0.0)
@@ -23,6 +24,7 @@ PODS:
   - RxRelay (6.5.0):
     - RxSwift (= 6.5.0)
   - RxSwift (6.5.0)
+  - Shimmer (1.0.2)
   - SwiftDate (6.3.1)
 
 DEPENDENCIES:
@@ -43,6 +45,7 @@ SPEC REPOS:
     - RxGesture
     - RxRelay
     - RxSwift
+    - Shimmer
     - SwiftDate
 
 EXTERNAL SOURCES:
@@ -59,7 +62,7 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   Core: f4b43d092ccf95efd42ecfe6265fa2681ff1c5e6
   FontAwesome: dd8c48bf965e771309d8af17c4d8579217b3e756
-  IGEX: f9f736775dcf311608c2bfa95d3392fbf65a7bea
+  IGEX: efbf823ff16b2090d752a452a3baca24a690da87
   IGListDiffKit: 665d6cf43ce726e676013db9c7d6c4294259b6b2
   IGListKit: fd5a5d21935298f5849fa49d426843cff97b77c7
   ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
@@ -67,6 +70,7 @@ SPEC CHECKSUMS:
   RxGesture: f3efb47ed2d26a8082f7b660d4a59970e275a7f8
   RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
   RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
+  Shimmer: c5374be1c2b0c9e292fb05b339a513cf291cac86
   SwiftDate: 72d28954e8e1c6c1c0f917ccc8005e4f83c7d4b2
 
 PODFILE CHECKSUM: 617f996906303a8478a1a6045b4abe9d327da3fc

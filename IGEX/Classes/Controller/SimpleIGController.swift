@@ -39,9 +39,9 @@ open class SimpleIGController: UIViewController, ListAdapterDataSource {
     
     //MARK: - IG ListAdapterDataSource
     
-//    static var m_loadingSection = LoadingSectionModel()
+    static var m_loadingSection = LoadingSectionModel()
     public var adapter: ListAdapter?
-    public var sectionsDatas = [BaseSectionModel]()
+    public var sectionsDatas: [BaseSectionModel] = [SimpleIGController.m_loadingSection]
     var disposed = DisposeBag()
     public var loadNextLastOffset = 0
     
@@ -115,6 +115,29 @@ open class SimpleIGController: UIViewController, ListAdapterDataSource {
     
     open func reloadSectionsComplete(){
         
+    }
+    
+    open func removeLoading(){
+        var removes = [BaseSectionModel]()
+        sectionsDatas.forEach { (section) in
+            if section is LoadingSectionModel{
+                removes.append(section)
+            }
+        }
+        if !removes.isEmpty{
+            sectionsDatas.removeObjects(removes)
+        }
+    }
+    
+    open func addLoadingSection(remove: Bool = true){
+        if remove{
+            removeLoading()
+        }
+        sectionsDatas.safeAppend(sequence: getLoadingSections())
+    }
+    
+    open func getLoadingSections() -> [BaseSectionModel]{
+        return [SimpleIGController.m_loadingSection]
     }
 }
 

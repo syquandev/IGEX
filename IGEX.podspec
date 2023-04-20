@@ -41,4 +41,6 @@ TODO: Add long description of the pod here.
   s.dependency 'RxSwift'
   s.dependency 'RxCocoa'
   s.dependency 'Core'
+  s.dependency 'Shimmer', '1.0.2'
+  
 end
