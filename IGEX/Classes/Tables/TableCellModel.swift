@@ -11,11 +11,11 @@ import IGListKit
 import Core
 import FontAwesome
 
-public protocol TableCellDelegate: class{
+public protocol TableCellDelegate: AnyObject{
     func tableCellTouched(_ sender: TableCellModel)
     
 }
-public protocol TableModelInterface: class{
+public protocol TableModelInterface: AnyObject{
     
 }
 

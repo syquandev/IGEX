@@ -29,10 +29,10 @@ public class IGSeeAllCell: CellModelView<IGSeeAllCellModel> {
 }
 
 
-public protocol IGSeeAllCellDelegate: class{
+public protocol IGSeeAllCellDelegate: AnyObject{
     
 }
-public protocol IGSeeAllModelInterface: class{
+public protocol IGSeeAllModelInterface: AnyObject{
     
 }
 

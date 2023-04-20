@@ -30,10 +30,10 @@ public class IGCell: CellModelView<IGCellModel> {
 }
 
 
-public protocol IGCellDelegate: class{
+public protocol IGCellDelegate: AnyObject{
     
 }
-public protocol IGModelInterface: class{
+public protocol IGModelInterface: AnyObject{
     
 }
 

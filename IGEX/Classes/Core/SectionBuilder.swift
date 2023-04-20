@@ -8,7 +8,7 @@
 import Foundation
 import IGListKit
 
-public protocol SectionBuilderInterface: class{
+public protocol SectionBuilderInterface: AnyObject{
     func getSection(object: Any?, presenter: AnyObject?) -> ListSectionController
 }
 

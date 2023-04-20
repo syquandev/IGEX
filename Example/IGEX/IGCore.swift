@@ -16,7 +16,7 @@ public class IGConfiguration{
     }
 }
 
-public protocol IGDelegate: class {
+public protocol IGDelegate: AnyObject {
     
 }
 

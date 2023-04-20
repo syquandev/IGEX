@@ -10,7 +10,7 @@ import UIKit
 import IGListKit
 import Core
 
-public protocol SectionControllerInterface: class {
+public protocol SectionControllerInterface: AnyObject {
     func setPresenter(_ presenter: AnyObject?)
     func getPresenter() -> AnyObject?
     func getSectionController() -> ListSectionController

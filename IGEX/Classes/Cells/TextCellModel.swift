@@ -16,7 +16,7 @@ public enum TextType: String {
 }
 
 
-public protocol TextCellDelegate: class{
+public protocol TextCellDelegate: AnyObject{
     
 }
 

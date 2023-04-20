@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-public protocol CellModelViewInterface: class {
+public protocol CellModelViewInterface: AnyObject {
     func setCellModel(_ cellModel: Any?)
     func setSectionController(_ sectionController: SectionControllerInterface?)
     func update()

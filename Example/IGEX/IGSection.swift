@@ -9,7 +9,7 @@
 import UIKit
 import IGEX
 
-public protocol IGSectionDelegate:class{
+public protocol IGSectionDelegate: AnyObject{
     
 }
 

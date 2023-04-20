@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 import IGListKit
 
-public protocol CellBuilderInterface: class{
+public protocol CellBuilderInterface: AnyObject{
     
     func setSectionModel(_ sectionModel: BaseSectionModel?, sectionController: SectionControllerInterface?)
     func getCellModels() -> [CellModelInterface]
