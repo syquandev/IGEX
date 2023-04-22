@@ -46,7 +46,6 @@ open class BaseCellModel: NSObject, CellModelInterface, DiffBaseModel {
         return errorMessage
     }
     
-    
     public var enableSideConstraint: Bool = false
     
     public func setAllSideSpace(_ val: CGFloat){
@@ -104,7 +103,6 @@ open class BaseCellModel: NSObject, CellModelInterface, DiffBaseModel {
         }
     }
     
-    
     public var height: CGFloat = 44
     
     private var _mVersion: Int = 0
@@ -143,6 +141,7 @@ open class BaseCellModel: NSObject, CellModelInterface, DiffBaseModel {
         self._mDiffID = diffID
         self.generateDiffID()
     }
+    
     open func initDiffID(){
         
     }
@@ -206,9 +205,11 @@ open class BaseCellModel: NSObject, CellModelInterface, DiffBaseModel {
     open func updateSection(animated: Bool = true){
         self.sectionControler?.updateSection(animated: animated)
     }
+    
     open func reloadSection(animated: Bool = true){
         self.sectionControler?.reloadSection(animated: animated)
     }
+    
     open func refreshSection(animated: Bool = true){
         self.sectionControler?.refreshSection(animated: animated)
     }
@@ -257,6 +258,7 @@ open class BaseCellModel: NSObject, CellModelInterface, DiffBaseModel {
     open func getCellWidth(maxWidth:CGFloat) -> CGFloat{
         return -1
     }
+    
     open func getCellName() -> String{
         let modelName = String(describing: type(of: self)).replacingOccurrences(of: "Model", with: "")
         

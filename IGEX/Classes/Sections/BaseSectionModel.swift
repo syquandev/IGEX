@@ -18,18 +18,22 @@ open class BaseSectionModel: BaseModel {
     deinit {
 //        print("\(String(describing: self)) section model deinit")
     }
-
 }
 
-extension BaseModel : ListDiffable{
+
+extension BaseModel: ListDiffable {
     public func diffIdentifier() -> NSObjectProtocol {
-            return getDiffID() as NSObjectProtocol
+        return self
+    }
+    
+    public func isEqual(toDiffableObject object: ListDiffable?) -> Bool {
+        if let object = object as? BaseModel {
+            return self.getDiffID() == object.getDiffID()
         }
-        
-        public func isEqual(toDiffableObject object: ListDiffable?) -> Bool {
-            if let obj = object as? BaseModel {
-                return self.id  == obj.id
-            }
-            return false
-        }
+        return false
+    }
+    
+    public func mergeDif(){
+//        var setResult = Set<BaseModel>()
+    }
 }

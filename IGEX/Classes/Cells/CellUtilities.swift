@@ -111,16 +111,5 @@ public class CellsUtilities: NSObject {
     
     public static func shadowView(_ view: UIView){
         view.addCardShadow()
-//        view.layer.cornerRadius = 10
-//
-//        // border
-//        view.layer.borderWidth = 1.0
-//        view.layer.borderColor = UIColor.black.withAlphaComponent(0.2).cgColor
-//
-//        // shadow
-//        view.layer.shadowColor = UIColor.black.cgColor
-//        view.layer.shadowOffset = CGSize(width: 0, height: 0)
-//        view.layer.shadowOpacity = 0.1
-//        view.layer.shadowRadius = 2.0
     }
 }

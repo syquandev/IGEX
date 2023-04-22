@@ -1,9 +1,9 @@
 PODS:
-  - Core (1.0.0):
+  - Core (1.0.1):
     - FontAwesome
     - ObjectMapper (= 4.2.0)
     - RxSwift
-    - SwiftDate
+    - SwiftDate (= 6.3.1)
   - FontAwesome (4.5.0)
   - IGEX (1.0.0):
     - Core
@@ -56,11 +56,11 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   Core:
-    :commit: 0df5b040931b454f7b58b43db1e79fffb80b9dde
+    :commit: d20d8f337122a66152d9b97317357c8cbfac205d
     :git: https://github.com/syquandev/Core
 
 SPEC CHECKSUMS:
-  Core: f4b43d092ccf95efd42ecfe6265fa2681ff1c5e6
+  Core: 7c10334d28b6256906d2ce01afe118f0d363d6ef
   FontAwesome: dd8c48bf965e771309d8af17c4d8579217b3e756
   IGEX: 08521323bf7f89ca26038dfae3f6cdcc28782ce4
   IGListDiffKit: 665d6cf43ce726e676013db9c7d6c4294259b6b2

@@ -8,7 +8,7 @@
 import Foundation
 
 public class HUD: NSObject{
-    public static func showAlert(_ title: String, icon: String){
+    public static func showAlert(_ title: String, icon: String? = "hud_success"){
         let toast = ToastNotificationView(title: title, icon: UIImage(name: icon, bundle: Core.getBundle()))
         toast.position = .bottom
         toast.show()

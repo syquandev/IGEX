@@ -20,7 +20,6 @@ public protocol CellModelViewInterface: AnyObject {
 
 open class CellModelView<T:CellModelInterface>: UICollectionViewCell, CellModelViewInterface {
     
-    
     var compactMode = false
     weak var bottomSeperatorLineView: UIView?
     weak var topSeperatorLineView: UIView?
@@ -33,6 +32,25 @@ open class CellModelView<T:CellModelInterface>: UICollectionViewCell, CellModelV
     
     open override func awakeFromNib() {
         super.awakeFromNib()
+        _setupDebug()
+    }
+    
+    private func _setupDebug(){
+//        if Device.shared.devServer != nil && Config.debugMode{
+//            let label = UILabel(frame: frame)
+//            label.alpha = 0.5
+//            label.isUserInteractionEnabled = false
+//            label.numberOfLines = 0
+//            label.font = UIFont.systemFont(ofSize: 10)
+//            label.text = String(describing: type(of: self))
+//            label.backgroundColor = UIColor.black
+//            label.textColor = UIColor.white
+//            self.addSubview(label)
+//            label.pinTopToView(self, constant: 0)
+//            label.pinLeadingToView(self, constant: 16)
+//            label.pinTrailingToView(self, constant: 16)
+//
+//        }
     }
     
     @objc func _copyCellName(sender: UIButton!) {

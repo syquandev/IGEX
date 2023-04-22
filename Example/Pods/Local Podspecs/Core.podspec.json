@@ -1,6 +1,6 @@
 {
   "name": "Core",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "summary": "A short description of Core.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/95286760/Core",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/95286760/Core.git",
-    "tag": "1.0.0"
+    "tag": "1.0.1"
   },
   "swift_versions": "4.2",
   "platforms": {
@@ -41,7 +41,7 @@
 
     ],
     "SwiftDate": [
-
+      "6.3.1"
     ]
   },
   "swift_version": "4.2"

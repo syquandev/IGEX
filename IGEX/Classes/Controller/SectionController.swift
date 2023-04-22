@@ -12,7 +12,6 @@ import Core
 
 extension ListSectionController{
     
-    
     public func invalidateSection(){
         self.collectionContext?.invalidateLayout(for: self, completion: nil)
     }
@@ -213,7 +212,6 @@ open class SectionController<T:BaseSectionModel>: ListSectionController, Section
         if let index = self.indexOf(cellModel: cellModel){
             self.reloadCell(index: index, animated: animated, completion: completion)
         }
-        
     }
     
     public func reloadCells(cellModels: [CellModelInterface], animated: Bool = false) {
@@ -233,7 +231,6 @@ open class SectionController<T:BaseSectionModel>: ListSectionController, Section
             self.reloadCells(indexs: indexs, animated: animated, completion: completion)
         }
     }
-    
     
     public func reloadCell(diffID: String?){
         guard let diffID = diffID else{
@@ -468,6 +465,7 @@ open class SectionController<T:BaseSectionModel>: ListSectionController, Section
         let cmp = paths.compactMap { (item) -> Int? in
             return item.item
         }
+        print("createIndexSetFromPaths \(cmp)")
         let set = IndexSet(cmp)
         return set
     }
@@ -497,7 +495,7 @@ open class SectionController<T:BaseSectionModel>: ListSectionController, Section
     }
     
     open override func numberOfItems() -> Int {
-        return cellModels.count;
+        return cellModels.count
     }
     
     open override func sizeForItem(at index: Int) -> CGSize {
@@ -518,7 +516,7 @@ open class SectionController<T:BaseSectionModel>: ListSectionController, Section
     
     open override func cellForItem(at index: Int) -> UICollectionViewCell {
 //        Log.console("open override func cellForItem")
-        let cellModel = self.cellModels.objectAtIndex(index)!
+        let cellModel = self.cellModels.objectAtIndex(index) ?? DefaultCellModel()
         let cellName = cellModel.getCellName()
         let bundle = cellModel.getBundle()
         let cellView = collectionContext!.dequeueReusableCell(withNibName: cellName, bundle: bundle, for: self, at: index)
@@ -617,8 +615,8 @@ class _SectionDebugLabelView: UICollectionViewCell {
     
     @objc func _copySectionName(sender: UIButton!) {
         let name = button?.titleLabel?.text?.replacingOccurrences(of: "\t", with: "")
+        print(name ?? "")
         UIPasteboard.general.string = name
     }
-    
 }
 

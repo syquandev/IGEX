@@ -57,7 +57,7 @@ public class IGCore: NSObject{
     
     public func setConfig(_ config: IGConfiguration){
         self.config = config
-        sections = [IGSectionModel()]
+        sections = [IGSectionModel(), IGSectionModel(), IGSectionModel()]
     }
     
     func viewReady(){
@@ -71,7 +71,8 @@ public class IGCore: NSObject{
         }else{
             self.sections.append(contentsOf: sections)
         }
-        
+        self.sections.append(contentsOf: sections)
+        self.sections.append(contentsOf: sections)
         controller?.displaySections(self.sections, isReplace: isReplace)
     }
 }

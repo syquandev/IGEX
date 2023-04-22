@@ -10,7 +10,7 @@ import Core
 import IGListKit
 import RxCocoa
 
-open class SimpleIGController: UIViewController, ListAdapterDataSource {
+open class SimpleIGController: SystemViewController, ListAdapterDataSource {
     
     override open func viewDidLoad() {
         super.viewDidLoad()
