@@ -31,9 +31,16 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '11.0'
   s.swift_version = '5.0'
   
-  s.source_files = 'IGEX/Classes/**/*'
+  s.source_files = 'IGEX/Classes/**/*.swift'
+  
   s.resource_bundles = {
-    'IGEX' => ['IGEX/Assets/**/*']
+     'IGEXBundle' => [
+     'IGEX/Assets/Storyboards/**/*.storyboard',
+     'IGEX/Assets/Xibs/**/*.xib',
+     'IGEX/Assets/Resources/**/*.xcassets',
+     'IGEX/Assets/Localizable/*.lproj/*.strings',
+     'IGEX/Classes/**/*.xib',
+     'IGEX/Classes/**/*.storyboard']
   }
   
   s.static_framework = true

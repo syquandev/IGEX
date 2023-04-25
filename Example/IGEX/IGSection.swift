@@ -45,6 +45,12 @@ public class IGSectionModel: BaseSectionModel {
             s.images = data
             sections.append(s)
         }
+        
+        if let data = data {
+            let s = IGSectionModel()
+            s.images = data
+            sections.append(s)
+        }
         return sections
     }
 }
@@ -69,6 +75,8 @@ public class IGSectionCellBuilder: BaseCellBuilder{
         
         let more = IGSeeAllCellModel()
         appendCell(more)
+        addBlankSpace(20, color: .red)
+        addEmpyData("xin lũi được chưa", background: .green)
     }
 }
 

@@ -44,64 +44,60 @@ open class BaseCellBuilder: NSObject, CellBuilderInterface {
     open func appendCells(_ cells: [CellModelInterface]?){
         self.cellModels.safeAppend(sequence: cells)
     }
+        
+    public func addBlockShadow(_ height: CGFloat = 8){
+        let cellModel = BlockShadowCellModel()
+        cellModel.height = height
+        self.cellModels.safeAppend(cellModel)
+    }
     
+    @discardableResult
+    open func addBlankSpace(_ height: CGFloat = 8, color: UIColor = UIColor.clear) -> BlankSpaceCellModel{
+        let cellModel = BlankSpaceCellModel(height: height)
+        cellModel.color = color
+        self.cellModels.safeAppend(cellModel)
+        return cellModel
+    }
     
-//    public func addBlockShadow(_ height: CGFloat = 8){
-//        let cellModel = BlockShadowCellModel()
-//        cellModel.height = height
-//        self.cellModels.safeAppend(cellModel)
-//    }
+    @discardableResult
+    public func addSingleLine(_ compactMode: Bool = false) -> SingleLineCellModel{
+        let cellModel = SingleLineCellModel()
+        cellModel.compactMode = compactMode
+        self.cellModels.safeAppend(cellModel)
+        return cellModel
+    }
     
-//    @discardableResult
-//    open func addBlankSpace(_ height: CGFloat = 8, color: UIColor = UIColor.clear) -> BlankSpaceCellModel{
-//        let cellModel = BlankSpaceCellModel(height: height)
-//        cellModel.color = color
-//        self.cellModels.safeAppend(cellModel)
-//        return cellModel
-//    }
-    
-//    @discardableResult
-//    public func addSingleLine(_ compactMode: Bool = false) -> SingleLineCellModel{
-//        let cellModel = SingleLineCellModel()
-//        cellModel.compactMode = compactMode
-//        self.cellModels.safeAppend(cellModel)
-//        return cellModel
-//    }
-    
-//    public func addFullSingleLine(_ compactMode: Bool = false){
-//        let cellModel = FullLineCellModel()
-//        cellModel.compactMode = compactMode
-//        self.cellModels.safeAppend(cellModel)
-//    }
+    public func addFullSingleLine(_ compactMode: Bool = false){
+        let cellModel = FullLineCellModel()
+        cellModel.compactMode = compactMode
+        self.cellModels.safeAppend(cellModel)
+    }
     
     public func addLoading(){
         let cellModel = LoadingCellModel()
         self.cellModels.safeAppend(cellModel)
     }
     
-//    public func addManualLoading(){
-//        let cellModel = ManualLoadingCellModel()
-//        self.cellModels.safeAppend(cellModel)
-//    }
+    public func addManualLoading(){
+        let cellModel = ManualLoadingCellModel()
+        self.cellModels.safeAppend(cellModel)
+    }
     
-//    public func addEmpyData(_ content: String = "", background:UIColor = UIColor.clear){
-//        let cellModel = EmptyDataCellModel()
-//        cellModel.content = content
-//        cellModel.background = background
-//        self.cellModels.safeAppend(cellModel)
-//    }
+    public func addEmpyData(_ content: String = "", background:UIColor = UIColor.clear){
+        let cellModel = EmptyDataCellModel()
+        cellModel.content = content
+        cellModel.background = background
+        self.cellModels.safeAppend(cellModel)
+    }
     
     
     public func disableInteractionCells(){
-        
         self.cellModels.forEach { (item) in
             item.setDisableInteraction(true)
         }
     }
     
-    
     public func disableAlphaCells(){
-        
         self.cellModels.forEach { (item) in
             item.setDisable(true)
         }
@@ -175,7 +171,6 @@ open class BaseCellBuilder: NSObject, CellBuilderInterface {
     }
 
     public func addExtraDetail(_ title: String, tag: Int, color: AppColor = AppColor.normal){
-
         let cell = TableCellModel(text: title.localized, icon: TableCellBuildinIcon.right_dark, color: color)
         cell.tag = tag
         self.appendCell(cell)

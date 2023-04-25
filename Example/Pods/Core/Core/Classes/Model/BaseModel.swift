@@ -53,6 +53,7 @@ extension IBaseModel{
     public func jsonString() -> String? {
         return self.toJSONString()
     }
+    
     public func jsonData() -> Data? {
         if let jsonString = self.jsonString(){
             let data = jsonString.data(using: .utf8)
@@ -71,17 +72,22 @@ public extension Array where Element:IBaseModel {
     }
 }
 
-
-
 public protocol DiffBaseModel: class{
     func getDiffID() -> String
     func isNeedUpdate() -> Bool
 }
 
+extension NSObject{
+    
+    public static var classIdentifier: String {
+        return String(describing: self)
+    }
+}
+
 open class BaseModel: NSObject, IBaseModel, DiffBaseModel {
     //Base
     public var id : String?
-    public var diffID: String = ""
+    public var diffID: String = Random.stringKey()
     public var cellDiffID: String?
     public var needUpdate = false
     

@@ -98,11 +98,11 @@ EOM
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "${PODS_CONFIGURATION_BUILD_DIR}/Core/Core.bundle"
-  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/IGEX/IGEX.bundle"
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/IGEX/IGEXBundle.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "${PODS_CONFIGURATION_BUILD_DIR}/Core/Core.bundle"
-  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/IGEX/IGEX.bundle"
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/IGEX/IGEXBundle.bundle"
 fi
 
 mkdir -p "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"

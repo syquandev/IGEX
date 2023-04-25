@@ -396,12 +396,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-IGEX_Example/Pods-IGEX_Example-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/Core/Core.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/IGEX/IGEX.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/IGEX/IGEXBundle.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Core.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IGEX.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IGEXBundle.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

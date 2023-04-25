@@ -1,5 +1,5 @@
 //  BaseCellBuilder.swift
-//  SimpleExtend
+//  IGEX
 //
 //  Created by Quan on 29/11/2022.
 
@@ -11,7 +11,7 @@ public class IGEX: NSObject {
 
     public static func getBundle() -> Bundle? {
         let frameworkBundle = Bundle(for: IGEX.self)
-        let path = frameworkBundle.resourceURL?.appendingPathComponent("IGEX.bundle")
+        let path = frameworkBundle.resourceURL?.appendingPathComponent("IGEXBundle.bundle")
         let resourcesBundle = Bundle(url: path!)
         return resourcesBundle
         

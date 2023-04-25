@@ -49,12 +49,14 @@ open class SimpleIGController: SystemViewController, ListAdapterDataSource {
         guard let collectionView = self.getCollectionView() else{
             return
         }
+        //        self.sectionsDatas.append(contentsOf: self.data.getSections())
         let viewController = self
         let updater = ListAdapterUpdater()
         let adapter = ListAdapter(updater: updater, viewController: viewController, workingRangeSize:5)
         adapter.collectionView = collectionView
         adapter.dataSource = self
         self.adapter = adapter
+        
         
         collectionView.rx.willDisplayCell.subscribe(onNext:{ [weak self] (cell, index) in
             self?.willDisplaySectionIndex(index.section)
@@ -128,7 +130,6 @@ open class SimpleIGController: SystemViewController, ListAdapterDataSource {
             sectionsDatas.removeObjects(removes)
         }
     }
-    
     open func addLoadingSection(remove: Bool = true){
         if remove{
             removeLoading()
@@ -254,5 +255,4 @@ public enum IGLoadingState{
     case error
     case done
     case none
-    
 }

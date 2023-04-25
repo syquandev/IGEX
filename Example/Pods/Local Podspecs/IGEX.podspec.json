@@ -19,10 +19,15 @@
     "ios": "11.0"
   },
   "swift_versions": "5.0",
-  "source_files": "IGEX/Classes/**/*",
+  "source_files": "IGEX/Classes/**/*.swift",
   "resource_bundles": {
-    "IGEX": [
-      "IGEX/Assets/**/*"
+    "IGEXBundle": [
+      "IGEX/Assets/Storyboards/**/*.storyboard",
+      "IGEX/Assets/Xibs/**/*.xib",
+      "IGEX/Assets/Resources/**/*.xcassets",
+      "IGEX/Assets/Localizable/*.lproj/*.strings",
+      "IGEX/Classes/**/*.xib",
+      "IGEX/Classes/**/*.storyboard"
     ]
   },
   "static_framework": true,

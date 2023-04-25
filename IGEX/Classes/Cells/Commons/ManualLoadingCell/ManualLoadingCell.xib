@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="usM-UC-aLE" customClass="ManualLoadingCell" customModule="IGEX">
+            <rect key="frame" x="0.0" y="0.0" width="431" height="30"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="431" height="30"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iga-TY-bAS">
+                        <rect key="frame" x="0.0" y="0.0" width="431" height="30"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W3T-FL-nd4">
+                                <rect key="frame" x="210.5" y="16" width="10" height="10"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="W3T-FL-nd4" secondAttribute="height" multiplier="1:1" id="Dfh-cP-vPJ"/>
+                                    <constraint firstAttribute="height" constant="10" id="Vfe-wd-Qde"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WV4-Kk-uFt">
+                                <rect key="frame" x="0.0" y="-16" width="431" height="46"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <state key="normal" title="TOUCH TO LOAD MORE">
+                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="loadMore:" destination="usM-UC-aLE" eventType="touchUpInside" id="8C8-1D-Zy9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="WV4-Kk-uFt" firstAttribute="leading" secondItem="Iga-TY-bAS" secondAttribute="leading" id="8VV-3z-wUu"/>
+                            <constraint firstAttribute="bottom" secondItem="WV4-Kk-uFt" secondAttribute="bottom" id="PLB-Am-48Y"/>
+                            <constraint firstItem="W3T-FL-nd4" firstAttribute="centerX" secondItem="Iga-TY-bAS" secondAttribute="centerX" id="k4q-6u-5nc"/>
+                            <constraint firstItem="WV4-Kk-uFt" firstAttribute="top" secondItem="Iga-TY-bAS" secondAttribute="top" constant="-16" id="lQn-xE-zqY"/>
+                            <constraint firstAttribute="bottom" secondItem="W3T-FL-nd4" secondAttribute="bottom" constant="4" id="nVt-9C-yRY"/>
+                            <constraint firstAttribute="trailing" secondItem="WV4-Kk-uFt" secondAttribute="trailing" id="zUb-we-PxE"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="qQW-4n-eo6"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Iga-TY-bAS" secondAttribute="trailing" id="coH-J1-GN2"/>
+                <constraint firstItem="Iga-TY-bAS" firstAttribute="leading" secondItem="usM-UC-aLE" secondAttribute="leading" id="gM9-ZN-Ve4"/>
+                <constraint firstItem="Iga-TY-bAS" firstAttribute="top" secondItem="usM-UC-aLE" secondAttribute="top" id="ltm-h8-kB6"/>
+                <constraint firstAttribute="bottom" secondItem="Iga-TY-bAS" secondAttribute="bottom" id="xLa-9n-y5S"/>
+            </constraints>
+            <size key="customSize" width="431" height="29"/>
+            <point key="canvasLocation" x="215.5" y="41.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

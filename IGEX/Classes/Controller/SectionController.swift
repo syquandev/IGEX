@@ -12,6 +12,7 @@ import Core
 
 extension ListSectionController{
     
+    
     public func invalidateSection(){
         self.collectionContext?.invalidateLayout(for: self, completion: nil)
     }
@@ -26,6 +27,7 @@ extension ListSectionController{
         }
     }
     
+    
     public func reloadCell(index: Int, animated: Bool) {
         self.reloadCell(index: index, animated: animated, completion: nil)
     }
@@ -34,9 +36,12 @@ extension ListSectionController{
         self.reloadCells(indexs: [index], animated: animated, completion: completion)
     }
     
+    
+    
     public func reloadCells(indexs: [Int], animated: Bool) {
         self.reloadCells(indexs: indexs, animated: animated, completion: nil)
     }
+    
     
     public func reloadCells(indexs: [Int], animated: Bool = false, completion: ((Bool) -> Void)?){
         for index in indexs{
@@ -212,12 +217,14 @@ open class SectionController<T:BaseSectionModel>: ListSectionController, Section
         if let index = self.indexOf(cellModel: cellModel){
             self.reloadCell(index: index, animated: animated, completion: completion)
         }
+        
     }
     
     public func reloadCells(cellModels: [CellModelInterface], animated: Bool = false) {
         self.reloadCells(cellModels: cellModels, animated: animated, completion: nil)
         
     }
+    
     public func reloadCells(cellModels: [CellModelInterface], animated: Bool, completion: ((Bool) -> Void)?) {
         
         var indexs = [Int]()
@@ -288,6 +295,7 @@ open class SectionController<T:BaseSectionModel>: ListSectionController, Section
             context.insert(in: self, at: indxs)
         }, completion: nil)
     }
+    
     public func removeCell(_ cell: CellModelInterface?, animated: Bool = false){
         if cell == nil{
             return
@@ -478,7 +486,6 @@ open class SectionController<T:BaseSectionModel>: ListSectionController, Section
         }
     }
     
-    
     // MARK: - Datasources
     open override func didUpdate(to object: Any) {
         self.sectionModel = object as? T
@@ -495,7 +502,7 @@ open class SectionController<T:BaseSectionModel>: ListSectionController, Section
     }
     
     open override func numberOfItems() -> Int {
-        return cellModels.count
+        return cellModels.count;
     }
     
     open override func sizeForItem(at index: Int) -> CGSize {
@@ -617,6 +624,7 @@ class _SectionDebugLabelView: UICollectionViewCell {
         let name = button?.titleLabel?.text?.replacingOccurrences(of: "\t", with: "")
         print(name ?? "")
         UIPasteboard.general.string = name
+        HUD.showAlert("Section name Copied")
     }
 }
 

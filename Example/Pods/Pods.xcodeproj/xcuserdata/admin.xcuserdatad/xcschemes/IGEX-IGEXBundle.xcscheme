@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "458706F5E03F2193750D05A45A97DA54"
-               BuildableName = "IGEX.bundle"
-               BlueprintName = "IGEX-IGEX"
+               BlueprintIdentifier = "98EC7EE4AA000373DCCCEAF24DF5503F"
+               BuildableName = "IGEXBundle.bundle"
+               BlueprintName = "IGEX-IGEXBundle"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

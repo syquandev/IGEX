@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Bpz-kU-FuZ" customClass="BlockShadowCell" customModule="IGEX">
+            <rect key="frame" x="0.0" y="0.0" width="279" height="68"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="279" height="68"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nfy-je-Mdy">
+                        <rect key="frame" x="0.0" y="0.0" width="279" height="68"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qye-7a-IgU">
+                                <rect key="frame" x="0.0" y="0.0" width="279" height="68"/>
+                                <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="topLineIB" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qye-7a-IgU" firstAttribute="leading" secondItem="nfy-je-Mdy" secondAttribute="leading" id="4e6-fy-ESb"/>
+                            <constraint firstAttribute="trailing" secondItem="qye-7a-IgU" secondAttribute="trailing" id="kv0-El-fR8"/>
+                            <constraint firstAttribute="bottom" secondItem="qye-7a-IgU" secondAttribute="bottom" id="lfW-MN-aG6"/>
+                            <constraint firstItem="qye-7a-IgU" firstAttribute="top" secondItem="nfy-je-Mdy" secondAttribute="top" id="qIy-R6-oCx"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="59o-jd-nvJ"/>
+            <constraints>
+                <constraint firstItem="nfy-je-Mdy" firstAttribute="top" secondItem="Bpz-kU-FuZ" secondAttribute="top" id="NVM-tg-fY9"/>
+                <constraint firstAttribute="bottom" secondItem="nfy-je-Mdy" secondAttribute="bottom" id="Vm3-Wm-p9B"/>
+                <constraint firstAttribute="trailing" secondItem="nfy-je-Mdy" secondAttribute="trailing" id="WyQ-h4-45g"/>
+                <constraint firstItem="nfy-je-Mdy" firstAttribute="leading" secondItem="Bpz-kU-FuZ" secondAttribute="leading" id="zXH-Ud-FnI"/>
+            </constraints>
+            <size key="customSize" width="279" height="80"/>
+            <point key="canvasLocation" x="146.40000000000001" y="122.33883058470765"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="groupTableViewBackgroundColor">
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

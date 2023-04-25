@@ -31,9 +31,9 @@ public class IGController: SimpleIGController{
         super.viewDidLoad()
         core.setController(self)
         initNavigation()
-        viewReady()
         initCollection()
         initCollectionRefresh()
+        viewReady()
     }
     
     func viewReady(){

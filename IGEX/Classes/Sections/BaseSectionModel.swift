@@ -22,11 +22,14 @@ open class BaseSectionModel: BaseModel {
 
 
 extension BaseModel: ListDiffable {
+    
     public func diffIdentifier() -> NSObjectProtocol {
         return self
     }
     
+    
     public func isEqual(toDiffableObject object: ListDiffable?) -> Bool {
+        
         if let object = object as? BaseModel {
             return self.getDiffID() == object.getDiffID()
         }
@@ -34,6 +37,6 @@ extension BaseModel: ListDiffable {
     }
     
     public func mergeDif(){
-//        var setResult = Set<BaseModel>()
+        var setResult = Set<BaseModel>()
     }
 }

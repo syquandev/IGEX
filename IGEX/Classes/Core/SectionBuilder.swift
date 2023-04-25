@@ -51,34 +51,34 @@ open class SectionBuilder: NSObject, SectionBuilderInterface{
     }
     
     open func getLoadingSection(_ object: Any?) -> SectionControllerInterface?{
-//        if object is LoadingSectionModel{
-//            let section = LoadingSection()
-//            return section
-//        }
+        if object is LoadingSectionModel{
+            let section = LoadingSection()
+            return section
+        }
         return nil
     }
     
     open func getManualLoadingSection(_ object: Any?) -> SectionControllerInterface?{
-//        if object is ManualLoadingSectionModel{
-//            let section = ManualLoadingSection()
-//            return section
-//        }
+        if object is ManualLoadingSectionModel{
+            let section = ManualLoadingSection()
+            return section
+        }
         return nil
     }
     
     open func getBlankSection(_ object: Any?) -> SectionControllerInterface?{
-//        if object is BlankSectionModel{
-//            let section = BlankSection()
-//            return section
-//        }
+        if object is BlankSectionModel{
+            let section = BlankSection()
+            return section
+        }
         return nil
     }
     
     open func getEmptyDataSection(_ object: Any?) -> SectionControllerInterface?{
-//        if object is EmptyDataSectionModel{
-//            let section = EmptyDataSection()
-//            return section
-//        }
+        if object is EmptyDataSectionModel{
+            let section = EmptyDataSection()
+            return section
+        }
         return nil
     }
 }

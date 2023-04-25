@@ -61,6 +61,7 @@ public class IGCore: NSObject{
     }
     
     func viewReady(){
+        controller?.displaySections(sections)
         getData()
     }
     
